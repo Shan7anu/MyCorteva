@@ -1,0 +1,155 @@
+/* Empty. Add your own CSS if you like */
+
+.image-card{
+    max-width:100px;
+}
+.h2-card{
+    padding-top:5%;
+    margin-left:20px;
+}
+.p-card{
+    margin-left:20px;
+}
+.imgA1 {
+      position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+}
+.imgB1 {
+      position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 3;
+}
+a {
+    text-decoration: none;
+}
+
+.test:after {
+    content: '\2807';
+    font-size: 25px;
+ 
+    }
+
+   .tab-al{
+    text-align: center;
+   } 
+
+   /* .video-container {
+    position: relative;
+    padding-bottom: 30%;
+    padding-top: 35px;
+    height: 0; overflow: hidden;
+} */
+.thumb-wrapper {
+    position:relative;
+    }
+    
+    .thumbwrapper span {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent url("") no-repeat;
+    }
+.rev_slider video::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+.video-overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* margin: 55px; */
+    padding: 6px 5px;
+    font-size: 20px;
+    font-family: Helvetica;
+    z-index: 1;
+    color: #FFF;
+    background-color: rgba(50, 50, 50, 0.3);
+    margin-left: 50px;
+    margin-top: 36px;
+}
+/* .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 150px;
+} */
+.tabq{
+    border-bottom: 3px solid #c1bdbd;
+}
+.font-bdy{
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+.title-font-sz{
+    font-size: 14px !important;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+}
+.title-font-tab{
+    font-size: 14px !important;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+    
+}
+
+.tile-font{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+.sub-title-font{
+    /* padding-top: 10px; */
+    padding-left: 10px;
+    font-size: 10px !important;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+
+}
+
+.tile-font-level{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 14px !important;
+    color:#c1bdbd;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+.sub-title-font-level{
+    /* padding-top: 10px; */
+    padding-left: 10px;
+    font-size: 10px !important;
+    font-weight: bold;
+    color:#c1bdbd;
+    font-family: 'Varela Round', sans-serif !important;
+
+}
+.tile-font-download{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 18px !important;
+    color:#161aa9;
+    float:right;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif !important;
+    padding-right: 10px;
+    /* padding-bottom: 20px; */
+    padding-top: 5px;
+}
+
+.avator-class{
+    padding: 10px;
+            margin: 1%;
+            margin-bottom: 5%;
+            border-radius: 2%;
+}

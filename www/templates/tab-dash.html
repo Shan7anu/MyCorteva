@@ -1,0 +1,180 @@
+<div class="bar bar-header " style="background-color: #171d9c; height: 55px; color:white;">
+    <div class="row">
+        <div class="col">
+            <div>
+                <img ng-src="img/pexena-Logo.png">
+                <!-- <img src="../img/pexena-Logo.png" > -->
+                <h1 class="title  " style="color:white; padding-top:5px; font-size:18px; font-family: 'Varela Round', sans-serif !important;">Home</h1>
+            </div>
+        </div>
+        <div no-padding class="col">
+
+            <div style="float:right;" >
+                <button ng-if="!IsRegistered" ng-click="goToRegistration()" style="margin-top: -5px;border-radius: 12px;background-color: #23AAAE;border: none;position: relative; z-index:1;">
+                <span style="font-size: 12px;color: white;" >Register</span>
+                </button>
+                
+                <button ng-if="IsRegistered" ng-click="goToRegistration()"  class="button-clear" style="margin-top: -5px;" >
+                <a href=""><i class="icon ion-person" style="color:white; font-size:22px; padding-right:10px; position: relative; z-index:1; "></i></a>
+                </button>
+                </div>
+
+            
+        </div>
+  
+
+    </div>
+
+</div>
+<ion-view class="padding" style="margin-top:50px;">
+    <ion-content class="padding">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" style="height:200px;" ng-if="videoBlock">
+<!--
+            <ion-slide ng-repeat="img in carousel">
+                <div class="box yellow ">
+                    <h1><img ng-src="{{img.metadata.articleImage}}" height="250" width="100%"></h1></div>
+            </ion-slide>
+-->
+            <ion-slide>
+                <div class="box yellow ">
+                    <h1><img ng-src="img/carousel_1.jpg" height="250" width="100%"></h1></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box pink ">
+                    <h1><img ng-src="img/carousel_2.jpg" height="250" width="100%"></h1></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box pink ">
+                    <h1><img ng-src="img/carousel_3.jpg" height="250" width="100%"></h1></div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="row" style="padding-top:10px;">
+
+            <div class="col tab-al">
+                <h5 ng-click="videoblock()"> <span ng-if="!videoBlock" class="title-font-tab" style="color: #b5b4b4;" >Videos</span> <span ng-if="videoBlock" class="tabq title-font-tab">Videos</span></h5> </div>
+            <div class="col tab-al">
+                <h5 ng-click="relatedVideo()"><span ng-if="!releatedVideoBlock" class="title-font-tab" style="color: #b5b4b4;">Related Videos </span>  <span ng-if="releatedVideoBlock" class="tabq title-font-tab">Related Videos</span></h5> </div>
+            <div class="col tab-al">
+                <h5 ng-click="article()"> <span ng-if="!articleBlock" class="title-font-tab" style="color: #b5b4b4;" >Article </span>   <span ng-if="articleBlock" class="tabq title-font-tab">Article</span></h5> </div>
+        </div>
+
+        <div ng-if="videoBlock">
+
+                <div class="list" style="margin-bottom: 20%;" >
+                    
+                    <div ng-repeat="video in freevideolist">
+                        <a class="item item-thumbnail-left card" style="margin: 5px;" href="navto://{{video.metadata.entityName}}">
+                      <img ng-src="{{video.metadata.articleImage}}">
+                      <h2 style="padding-top:5%;margin-left:20px">{{video.metadata.title}}</h2>
+                      <p style="margin-left:20px">{{video.metadata.shortAbstract}}</p>
+                        </a>                
+                </div>
+                <div ng-repeat="video in videolist">
+                    <a href="navto://{{IsRegistered ? video.metadata.entityName : 'Registration'}}">
+                    <div class="item item-thumbnail-left card" style="margin: 5px;">
+<!--                       <img ng-src="{{IsRegistered ? video.metadata.articleImage : 'img/Lock.png'}}">-->
+                        <img class="imgA1" ng-src="{{video.metadata.articleImage}}">
+                        <img ng-hide="IsRegistered" style="padding-top: 10px;" class="imgB1 item-image" src="img/lock.png">
+                      <h2 style="padding-top:5%;margin-left:20px">{{video.metadata.title}}</h2>
+                      <p style="margin-left:20px">{{video.metadata.shortAbstract}}</p>
+                    </div>
+                        </a>
+                
+                </div>
+            </div>
+
+        </div>
+        <div ng-if="releatedVideoBlock">
+                <div class="list" style="margin-bottom: 20%;" >
+                    
+                    <div ng-repeat="video in freevideolist">
+                        <a class="item item-thumbnail-left card" style="margin: 5px;" href="navto://{{video.metadata.entityName}}">
+                      <img ng-src="{{video.metadata.articleImage}}">
+                      <h2 style="padding-top:5%;margin-left:20px">{{video.metadata.title}}</h2>
+                      <p style="margin-left:20px">{{video.metadata.shortAbstract}}</p>
+                        </a>                
+                </div>
+                <div ng-repeat="video in videolist">
+                    <a href="navto://{{IsRegistered ? video.metadata.entityName : 'Registration'}}">
+                    <div class="item item-thumbnail-left card" style="margin: 5px;">
+<!--                       <img ng-src="{{IsRegistered ? video.metadata.articleImage : 'img/Lock.png'}}">-->
+                        <img class="imgA1" ng-src="{{video.metadata.articleImage}}">
+                        <img ng-hide="IsRegistered" style="padding-top: 10px;" class="imgB1 item-image" src="img/lock.png">
+                      <h2 style="padding-top:5%;margin-left:20px">{{video.metadata.title}}</h2>
+                      <p style="margin-left:20px">{{video.metadata.shortAbstract}}</p>
+                    </div>
+                        </a>
+                
+                </div>
+            </div>
+
+        </div>
+
+        <div ng-if="articleBlock">
+
+            <ion-list>
+                <ion-item class="card item-text-wrap" style="padding: 10px;
+                margin: 1%;
+                margin-bottom: 5%;
+                border-radius: 2%;" ng-repeat="article in articleList">
+                    <h2 style="padding-left:10px;">{{article.metadata.title}}</h2>
+                    <p style="padding:10px;  text-align: justify;
+                       text-justify: inter-word; "> {{(article.metadata.abstract | limitTo: 220) + (article.metadata.abstract.length > 100 ? '...' : '')}} </p>
+                    <div>
+                        <a href="navto://{{article.metadata.entityName}}">
+                        <img ng-src="img/PDF.png" align="right" style="float:right;">
+                        <h2 class="tile-font-download">Download PDF</h2>
+                        </a>
+                    </div>
+
+                </ion-item>
+            </ion-list>
+
+        </div>
+
+    </ion-content>
+</ion-view>
+
+<style>
+    body {
+        font-family: Arial;
+    }
+    /* Style the tab */
+    
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    /* Style the buttons inside the tab */
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    /* Change background color of buttons on hover */
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    /* Create an active/current tablink class */
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+    /* Style the tab content */
+    
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+</style>
