@@ -14,8 +14,12 @@ angular.module('starter.controllers', [])
         else
             $scope.IsRegistered = false;
         
-    $scope.goToRegistration = function() {
+/*     $scope.goToRegistration = function() {
             $scope.IsRegistered ? window.location.href="" : window.location.href="navto://Registration"
+        } */
+        $scope.goToRegistration = function () {
+            console.log("Register Clicked");
+            $location.path('/registration');
         }
 
         document.addEventListener("deviceready", doClick, false);
@@ -204,4 +208,29 @@ angular.module('starter.controllers', [])
         $scope.settings = {
             enableFriends: true
         };
-    });
+    })
+
+    /* Registration Controller */
+    .controller('RegistrationCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside registrationCtrl");
+    $scope.registration = registration;
+    $scope.professionType = professionType;
+
+    $scope.uploadDP = function () {
+        console.log("uploadDP");
+        /* Upload Picture Logic and remove below navigation */
+        /* $location.path('/profile'); */
+        alert("Navigate to Profile Screen");
+    }
+    $scope.sendOTP = function () {
+        console.log("sendOTP");
+        /* $location.path('/otp'); */
+        alert("Navigate to OTP Screen");
+    }
+    $scope.signup = function () {
+        console.log("signup");
+        /* $location.path('/otp'); */
+        alert("Navigate to OTP Screen");
+    }
+
+}]);

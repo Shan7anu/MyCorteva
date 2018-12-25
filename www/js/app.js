@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngMaterial'])
 .config(['$compileProvider', function ($compileProvider) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|sms|tel|navto):/);
 }])
@@ -78,7 +78,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 //  new page added 
     .state('registration', {
       url: '/registration',    
-      templateUrl: 'templates/registration.html'
+      templateUrl: 'templates/registration.html',
+      controller: 'RegistrationCtrl'
     })
 
     .state('detailsPage', {

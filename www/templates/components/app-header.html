@@ -1,0 +1,16 @@
+<div aria-label="page header" class="container block-container page-header" ng-controller="headerCtrl">
+    <div class="row">
+        <span class="space-15"></span>
+        <div class="col-xs-2" ng-click="backButton()">
+            <img class="header-back-button" alt="Back button" aria-label="Back" role="button">
+            <!-- Added role="button" for Back Button, without adding role as 'button' it's reading as 'graphic'  -->    
+        </div>
+        <div class="col-xs-8">
+            <header role="text" title="header title" aria-label="{{pagetitle}} header title" class="header-title" ng-bind="pagetitle"></header>
+       </div>
+        <div class="col-xs-2" ng-click="close()">
+            <!-- <a class="header-cancel-btn" href="#" ng-click="cancel()" aria-label="cancel" role="button">Cancel</a> -->
+            <img class="header-close-button"  alt="Close button" aria-label="Close" role="button">
+        </div>
+    </div>
+</div>

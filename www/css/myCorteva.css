@@ -1,0 +1,506 @@
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeue.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../resources/fonts/HelveticaNeue.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../resources/fonts/HelveticaNeue.otf') format("opentype"), /* Safari, Android, iOS */
+    url('../fonts/HelveticaNeue.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../resources/fonts/HelveticaNeueBold.otf') format("opentype"), /* Safari, Android, iOS */
+    url('../resources/fonts/HelveticaNeueBold.woff') format("woff");
+    /* Pretty Modern Browsers */
+}
+
+body {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+/* CSS default set */
+
+body {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+*,
+p,
+ul,
+li,
+span,
+address {
+    outline: none!important;
+    padding: 0;
+    margin: 0px;
+}
+
+.container-fluid-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+label {
+    font-weight: normal;
+    margin: 0px;
+}
+
+
+/********** HEADING STYLES *********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.text-xlg {
+    font-size: 42px;
+    font-family: "HelveticaNeueBold", Helvetica, Arial, sans-serif;
+}
+.text-lg {
+    font-size: 16px;
+    line-height: 25px;
+}
+.text-md {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+.text-xs {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/****START: Vertical Rhythm CSS */
+
+.space-120 {
+    height: 120px;
+    display: block;
+}
+
+.space-100 {
+    height: 100px;
+    display: block;
+}
+
+.space-50 {
+    height: 50px;
+    display: block;
+}
+
+.space-30 {
+    height: 30px;
+    display: block;
+}
+
+.space-15 {
+    height: 15px;
+    display: block;
+}
+
+.space-10 {
+    height: 10px;
+    display: block;
+}
+
+.space-5 {
+    height: 5px;
+    display: block;
+}
+
+
+/****END: Vertical Rhythn CSS */
+
+.font-normal {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.font-bold {
+    font-family: "HelveticaNeueBold", Helvetica, Arial, sans-serif;
+}
+
+/********** CONTAINER *****************/
+
+.block-container {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.bg-blue {
+    background-color: darkblue;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+.white {
+    color: #fff;
+}
+.blue {
+    color: darkblue;
+}
+.grey {
+    color: #a9a9a9;
+}
+.bg-red {
+    background-color:#ec0026;
+}
+.bg-black {
+    background-color: #000000;
+}
+
+/* Padding Zero */
+.p-0 {
+    padding: 0;
+}
+/* Margin Zero */
+.m-0 {
+    margin: 0;
+}
+/* Margin 0 auto */
+.m-0-auto {
+    margin: 0 auto;
+}
+.m-left-10 {
+    margin-left: 10px !important;
+}
+.m-left--15 {
+    margin-left: -15px !important;
+}
+.full-width {
+    width: 100%;
+}
+.nostyle {
+    text-transform: none;
+}
+
+/* Primary Button CSS*/
+.primary-button {
+    background-color: #21bcc1 !important;
+    border: 1px solid #21bcc1 ;
+    border-radius: 8px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
+}
+.primary-button:active,
+.primary-button:focus,
+.primary-button:visited,
+.primary-button-rect:active,
+.primary-button-rect:focus,
+.primary-button-rect:visited
+{
+    background-color: #21bcc1 !important;
+    border: 1px solid #21bcc1 !important;
+    color: #fff;
+    font-size: 16px;
+}
+/* Secondary Button */
+.secondary-button {
+    background-color: #cbcbcb !important;
+    border: 1px solid #cbcbcb !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
+}
+/* Primary Button Rectangle*/
+.primary-button-rect {
+    background-color: #21bcc1 !important;
+    border: 1px solid #21bcc1 ;
+    border-radius: 0px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
+}
+/* Submit Button Rectangle*/
+.btn-submit-rect {
+    background-color: #ec0026 !important;
+    border: 1px solid #ec0026 ;
+    border-radius: 0px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
+}
+
+
+body.md-default-theme, body, html.md-default-theme, html {
+    background-color: #fff;
+}
+
+/* Placing elements at bottom of page */
+.placed-bottom-30 {
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
+}
+
+.placed-bottom-0 {
+    overflow: hidden;
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
+}
+
+
+
+.shadow {
+    box-shadow: 0 5px 15px #a9a9a9;
+}
+
+/* Font Size 14 */
+.text-14 {
+    font-size: 14px;
+}
+/* Font Size 10 */
+.text-10 {
+    font-size: 10px;
+}
+
+/* OTP Styling */
+input[type=number] {
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+    text-align: center;
+    border-width: inherit;
+box-sizing: border-box;
+border-bottom: 2px solid #a9a9a9;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* App Header */
+.page-header {
+    position: relative;
+    margin: 0;
+    display: block;
+    border: none;
+}
+
+.header-title {
+    color: #fff;
+    text-align: center;
+}
+.header-back-button {
+    content: url("../resources/img/official/back.png");
+    float: left !important;
+}
+
+.header-close-button {
+    content: url("../resources/img/official/close.png");
+    float: right !important;
+}
+
+.crop-placeholder-image {
+    content: url("../resources/img/placeholder-image.svg");
+    float: none;
+    box-shadow: 0 0 20px #a9a9a9;
+    height: 150px;
+    width: 150px;
+}
+
+
+.text-green, .success {
+    color: #4da133;
+}
+.text-red {
+    color: #ec0026;
+}
+
+.margin-top-50 {
+    margin-top: -50px;
+}
+.imageontop-parent {
+    position:relative;
+    top:0; 
+    left:0;
+}
+.imageontop-image1 {
+    position:relative;
+    top:0; 
+    left:0;
+}
+
+/* Devices ranging upto 320px width */
+@media only screen and (max-width: 320px) {
+    .imageontop-image2 {
+        position: absolute !important; 
+        top: -20px !important;
+        left: 140px !important;
+    }
+    .profile-edit {
+        position: absolute !important;
+        top: -10px !important;
+        left: 60px !important;
+    }
+}
+  /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30*/
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 160px !important;
+    }
+    .profile-edit {
+        position: absolute !important;
+        top: -10px !important;
+        left: 70px !important;
+    }
+}
+  
+/* Devices with min-width 375CSSpx like iPhone X */
+@media only screen and (min-width: 375px) { 
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 168px !important;
+    }
+    .profile-edit {
+    position: relative !important;
+    top: -110px !important;
+    /* left: 30px !important; */
+    left: 50px !important;
+    }
+}
+/* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
+@media only screen and (min-width: 412px){
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 188px !important;
+}
+@media only screen and (min-width: 425px) {
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 192px !important;
+}
+.profile-edit {
+    position: relative !important;
+    top: -125px !important;
+    left: 50px !important
+    }
+    
+}
+/* ----------- iPad Media Queries ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .container {
+        width: 100%;
+    }
+    .primary-button {
+        width: 75% !important;
+    }
+    .secondary-button {
+        width: 75% !important;
+    }
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 365px !important;
+    }
+    .profile-edit {
+        position: relative !important;
+        top: -160px !important;
+        left: 65px !important;
+    }
+    table {
+        height: 150px;
+    }
+
+}
+/* ----------- iPad Pro Media Queries ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .container {
+        width: 100% !important;
+    }
+    .primary-button {
+        width: 75% !important;
+    }
+    .secondary-button {
+        width: 75% !important;
+    }
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 495px !important;
+    }
+    table {
+        height: 150px;
+    }
+}
+
+md-content {
+    display: inline !important;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 0;  
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    border: 0 !important;
+    border-color: rgba(0,0,0,0.12) !important;
+    border-width: 0 0 1px 0 !important;
+    
+}
