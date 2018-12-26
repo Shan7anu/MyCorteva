@@ -385,8 +385,14 @@ input[type=number]::-webkit-outer-spin-button {
     .profile-edit {
         position: absolute !important;
         top: -10px !important;
-        left: 60px !important;
+        left: 65px !important; 
     }
+    table {
+        position: relative;
+        margin-top: -20px;
+        left: 20px;
+    }
+
 }
   /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30*/
 @media only screen and (max-width: 360px) and (min-width: 321px) {
@@ -410,18 +416,28 @@ input[type=number]::-webkit-outer-spin-button {
     left: 168px !important;
     }
     .profile-edit {
-    position: relative !important;
-    top: -110px !important;
-    /* left: 30px !important; */
-    left: 50px !important;
+        position: fixed;
+        left: 95px;
+        top: 55px;
+    }
+    table {
+        position: relative;
+        margin-top: -20px;
+        left: 20px;
     }
 }
 /* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
 @media only screen and (min-width: 412px){
-.imageontop-image2 {
-    position: absolute !important;
-    top: -20px !important;
-    left: 188px !important;
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 188px !important;
+    }
+    .profile-edit {
+        position: fixed;
+        top: 55px !important;
+        left: 95px !important;
+    }
 }
 @media only screen and (min-width: 425px) {
 .imageontop-image2 {
@@ -430,9 +446,14 @@ input[type=number]::-webkit-outer-spin-button {
     left: 192px !important;
 }
 .profile-edit {
-    position: relative !important;
-    top: -125px !important;
-    left: 50px !important
+    position: fixed;
+    top: 55px !important;
+    left: 95px !important;
+    }
+    table {
+        position: relative !important;
+        left: 122px;
+        top: -90px
     }
     
 }

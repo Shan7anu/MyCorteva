@@ -75,12 +75,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
-//  new page added 
+/* Registration Screen */
     .state('registration', {
       url: '/registration',    
       templateUrl: 'templates/registration.html',
       controller: 'RegistrationCtrl'
     })
+/* Profile Screen */
+.state('profile', {
+  url: '/profile',    
+  templateUrl: 'templates/profile.html',
+  controller: 'profileCtrl'
+})
 
     .state('detailsPage', {
       url: '/detailsPage',    

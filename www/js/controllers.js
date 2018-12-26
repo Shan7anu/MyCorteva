@@ -210,6 +210,17 @@ angular.module('starter.controllers', [])
         };
     })
 
+/* Header Controller */
+.controller('headerCtrl', ['$rootScope', '$location', '$scope', '$location', function ($rootScope, $location, $scope, $location) {
+    console.log("Inside headerCtrl");
+    $scope.close = function () {
+        console.log('close pressed');
+    }
+    $scope.backButton = function () {
+        console.log('backButton pressed');
+        history.back();
+    }
+}])
     /* Registration Controller */
     .controller('RegistrationCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside registrationCtrl");
@@ -219,8 +230,8 @@ angular.module('starter.controllers', [])
     $scope.uploadDP = function () {
         console.log("uploadDP");
         /* Upload Picture Logic and remove below navigation */
-        /* $location.path('/profile'); */
-        alert("Navigate to Profile Screen");
+        $location.path('/profile');
+        //alert("Navigate to Profile Screen");
     }
     $scope.sendOTP = function () {
         console.log("sendOTP");
@@ -233,4 +244,14 @@ angular.module('starter.controllers', [])
         alert("Navigate to OTP Screen");
     }
 
+}])
+/* Profile Controller*/
+.controller('profileCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside profileCtrl");
+    $scope.pagetitle = "Profile";
+    $scope.profile = profile;
+    $scope.userData = userData;
+    $scope.navigateTo = function () {
+        alert("Yet to be developed!")
+    }
 }]);
