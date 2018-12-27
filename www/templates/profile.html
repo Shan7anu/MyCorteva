@@ -1,13 +1,11 @@
 <ion-nav-view>
-        <div ng-include="'templates/components/app-header-blue.html'"></div>
-    <ion-content class="has-header">
+    <div ng-include="'templates/components/app-header-blue.html'"></div>
+    <ion-view class="has-header">
         <!DOCTYPE html>
         <html>
-
         <body>
-            
             <ion-grid>
-                
+                <span class="space-50"></span>
                 <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
                     <ion-row>
                         <ion-col col-12 col-sm-12 col-md-12>
@@ -20,7 +18,7 @@
                                         style="width:50px;" alt="upload profile picture" ng-click="uploadDP()">
                                 </div>
                             </ion-col>
-                            <ion-col col-8 col-sm-8 col-md-8  >
+                            <ion-col col-8 col-sm-8 col-md-8>
                                 <span class="space-10"></span>
                                 <table class="p-0">
                                     <tr ng-repeat="data in userData">
@@ -29,13 +27,12 @@
                                     </tr>
                                 </table>
                             </ion-col>
-
                         </ion-col>
                         <ion-col col-12 col-sm-12 col-md-12>
                             <span class="space-30"></span>
                             <md-divider></md-divider>
                             <md-list flex class="p-0">
-                                <md-list-item ng-click="navigateTo(ls.listCaption, $event)" ng-repeat="ls in profile">
+                                <md-list-item ng-click="navigateTo(ls.listCaption)" ng-repeat="ls in profile">
                                     <img src="{{ls.listImg}}" class="m-left--15">
                                     <p class="m-left-10 text-14">{{ls.listCaption}}</p>
                                     <md-divider></md-divider>
@@ -44,14 +41,9 @@
                             <span class="space-30"></span>
                         </ion-col>
                     </ion-row>
-                    
                 </section>
             </ion-grid>
-
-
-
         </body>
-
         </html>
-    </ion-content>
+    </ion-view>
     <ion-nav-view>

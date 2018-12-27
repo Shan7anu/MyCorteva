@@ -25,6 +25,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // Set the statusbar to use the default style, tweak this to
       // remove the status bar on iOS or change it to use white instead of dark colors.
       StatusBar.styleDefault();
+      StatusBar.overlaysWebView(false);
+      StatusBar.styleLightContent();
+      StatusBar.backgroundColorByHexString('#2c1a92'); //Status Bar Background Color
     }
   });
 })

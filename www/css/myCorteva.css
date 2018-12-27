@@ -329,6 +329,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
     display: block;
     border: none;
+    height: 50px !important;
 }
 
 .header-title {
@@ -424,8 +425,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .profile-edit {
         position: fixed;
-        left: 95px;
-        top: 10px;
+        left: 90px;
+        top: 55px;
     }
     table {
         position: relative;
@@ -455,8 +456,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .profile-edit {
     position: fixed;
-    top: 10px !important;
-    left: 95px !important;
+    top: 55px !important;
+    left: 90px !important;
     }
     table {
         position: relative !important;
@@ -489,15 +490,15 @@ and (max-device-width : 1024px)  {
     }
     .profile-edit {
         position: fixed !important;
-        top: 5px !important;
+        top: 50px !important;
         left: 125px !important;
         width: 10% !important;
     }
     table {
-        height: 155px;
+        height: 130px;
         position: relative !important;
         left: 96px;
-        top: 10px;
+        top: 0px;
         width: 50%;
     }
 
@@ -527,12 +528,16 @@ and (max-device-width : 1024px)  {
     }
     .profile-edit {
         position: fixed !important;
-        top: 0px !important;
-        left: 145px !important;
+        top: 45px !important;
+        left: 140px !important;
         width: 10% !important;
     }
     table {
-        height: 150px;
+        height: 150px !important;
+        position: relative !important;
+        left: 96px;
+        top: 10px;
+        width: 50%;
     }
 }
 
