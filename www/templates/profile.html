@@ -1,10 +1,11 @@
 <ion-nav-view>
-    <ion-content>
+        <div ng-include="'templates/components/app-header-blue.html'"></div>
+    <ion-content class="has-header">
         <!DOCTYPE html>
         <html>
 
         <body>
-            <div ng-include="'templates/components/app-header-blue.html'"></div>
+            
             <ion-grid>
                 
                 <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
@@ -19,22 +20,22 @@
                                         style="width:50px;" alt="upload profile picture" ng-click="uploadDP()">
                                 </div>
                             </ion-col>
-                            <ion-col col-8 col-sm-8 col-md-8 style="padding-left: 25px;" >
+                            <ion-col col-8 col-sm-8 col-md-8  >
                                 <span class="space-10"></span>
-                                <table>
+                                <table class="p-0">
                                     <tr ng-repeat="data in userData">
                                         <td class="text-left text-10 grey"><strong>{{data.key}}</strong></td>
-                                        <td class="text-left text-10" style="padding-left: 10px;">{{data.value}}</td>
+                                        <td class="text-left text-10" style="padding-left: 5px;">{{data.value}}</td>
                                     </tr>
                                 </table>
                             </ion-col>
 
                         </ion-col>
                         <ion-col col-12 col-sm-12 col-md-12>
-                            <span class="space-10"></span>
+                            <span class="space-30"></span>
                             <md-divider></md-divider>
-                            <md-list ng-cloak class="p-0">
-                                <md-list-item ng-click="navigateTo()" ng-repeat="ls in profile">
+                            <md-list flex class="p-0">
+                                <md-list-item ng-click="navigateTo(ls.listCaption, $event)" ng-repeat="ls in profile">
                                     <img src="{{ls.listImg}}" class="m-left--15">
                                     <p class="m-left-10 text-14">{{ls.listCaption}}</p>
                                     <md-divider></md-divider>
@@ -43,6 +44,7 @@
                             <span class="space-30"></span>
                         </ion-col>
                     </ion-row>
+                    
                 </section>
             </ion-grid>
 

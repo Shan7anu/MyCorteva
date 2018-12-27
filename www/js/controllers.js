@@ -251,7 +251,17 @@ angular.module('starter.controllers', [])
     $scope.pagetitle = "Profile";
     $scope.profile = profile;
     $scope.userData = userData;
-    $scope.navigateTo = function () {
-        alert("Yet to be developed!")
-    }
+/*     $scope.activate = function (item) {
+        alert("Yet to be developed!");
+    } */
+    $scope.navigateTo = function(to, event) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .title('Navigating')
+            .textContent('Imagine being taken to ' + to)
+            .ariaLabel('Navigation demo')
+            .ok('Neat!')
+            .targetEvent(event)
+        );
+      };
 }]);

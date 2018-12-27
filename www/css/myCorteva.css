@@ -389,8 +389,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
     table {
         position: relative;
-        margin-top: -20px;
+        margin-top: 10px;
         left: 20px;
+        width: 62%;
     }
 
 }
@@ -404,7 +405,13 @@ input[type=number]::-webkit-outer-spin-button {
     .profile-edit {
         position: absolute !important;
         top: -10px !important;
-        left: 70px !important;
+        left: 65px !important;
+    }
+    table {
+        position: relative !important;
+        margin-top: 4px;
+        left: 25px;
+        width: 67%;
     }
 }
   
@@ -418,12 +425,13 @@ input[type=number]::-webkit-outer-spin-button {
     .profile-edit {
         position: fixed;
         left: 95px;
-        top: 55px;
+        top: 10px;
     }
     table {
         position: relative;
-        margin-top: -20px;
-        left: 20px;
+        margin-top: 10px;
+        left: 35px;
+        width: 68%;
     }
 }
 /* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
@@ -447,13 +455,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .profile-edit {
     position: fixed;
-    top: 55px !important;
+    top: 10px !important;
     left: 95px !important;
     }
     table {
         position: relative !important;
-        left: 122px;
-        top: -90px
+        left: 40px;
+        top: 0px;
+        width: 73%;
     }
     
 }
@@ -470,18 +479,26 @@ and (max-device-width : 1024px)  {
     .secondary-button {
         width: 75% !important;
     }
+    .imageontop-image1 {
+        width: 150px !important;
+    }
     .imageontop-image2 {
         position: absolute !important;
         top: -20px !important;
         left: 365px !important;
     }
     .profile-edit {
-        position: relative !important;
-        top: -160px !important;
-        left: 65px !important;
+        position: fixed !important;
+        top: 5px !important;
+        left: 125px !important;
+        width: 10% !important;
     }
     table {
-        height: 150px;
+        height: 155px;
+        position: relative !important;
+        left: 96px;
+        top: 10px;
+        width: 50%;
     }
 
 }
@@ -500,10 +517,19 @@ and (max-device-width : 1024px)  {
     .secondary-button {
         width: 75% !important;
     }
+    .imageontop-image1 {
+        width: 175px !important;
+    }
     .imageontop-image2 {
         position: absolute !important;
         top: -20px !important;
         left: 495px !important;
+    }
+    .profile-edit {
+        position: fixed !important;
+        top: 0px !important;
+        left: 145px !important;
+        width: 10% !important;
     }
     table {
         height: 150px;
@@ -514,9 +540,9 @@ md-content {
     display: inline !important;
 }
 table {
-    width: 100%;
+    /* width: 100%; */
     border-collapse: separate;
-    border-spacing: 10px 0;  
+    /* border-spacing: 10px 0;   */
 }
 
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {

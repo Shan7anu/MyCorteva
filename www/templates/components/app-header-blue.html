@@ -1,15 +1,15 @@
-<div aria-label="page header" class="container block-container page-header bg-blue" ng-controller="headerCtrl">
+<div aria-label="page header" class="bar bar-header container block-container page-header bg-blue" ng-controller="headerCtrl">
     <ion-row>
-        <span class="space-15"></span>
-        <ion-col col-2" ng-click="backButton()">
+        <span class="space-10"></span>
+        <ion-col col-2 ng-click="backButton()">
             <img class="header-back-button" alt="Back button" aria-label="Back" role="button">
-            <!-- Added role="button" for Back Button, without adding role as 'button' it's reading as 'graphic'  -->    
         </ion-col>
-        <ion-col col-8">
-            <header role="text" title="header title" aria-label="{{pagetitle}} header title" class="header-title" ng-bind="pagetitle">{{pagetitle}}</header>
-       </ion-col>
-<!--   <ion-col col-2 ng-click="close()">
-            <img class="header-close-button"  alt="Close button" aria-label="Close" role="button">
-        </ion-col> -->
+        <ion-col col-8>
+            <header role="text" title="header title" aria-label="{{pagetitle}} header title" class="header-title"
+                ng-bind="pagetitle">{{pagetitle}}</header>
+        </ion-col>
+        <ion-col col-2>
+            <!-- Add Button/Image If required at the right of Header -->
+        </ion-col>
     </ion-row>
 </div>
