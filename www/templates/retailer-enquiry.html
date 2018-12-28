@@ -1,0 +1,80 @@
+<!-- Retailer Enquiry -->
+<ion-view view-title="Retail Enquiry">
+    <div ng-include="'templates/components/app-header-blue.html'"></div>
+    <ion-content class="has-header">
+        <span class="space-30"></span>
+        <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12 col-sm-12 col-md-12>
+                        <p class="text-14 grey">{{re.heading}}</p>
+                        <span class="space-15"></span>
+                        <md-content layout-padding="" class="bg-white container block-container p-0">
+                            <div class="p-0">
+                                <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block"
+                                    flex-gt-md="">
+                                    <strong class="text-14">{{re.selectDealer}}</strong>
+                                    <span class="space-15"></span>
+                                    <input ng-model="dealer.name" placeholder="Dealer Name" class="col-xs-12 col-sm-12 col-md-12">
+                                </md-input-container>
+                            </div>
+                        </md-content>
+
+                        <strong class="text-14">{{re.yourQuesLabel}}</strong>
+                        <md-content layout-padding="" class="bg-white container block-container p-0">
+                            <div class="p-0">
+                                <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block"
+                                    flex-gt-md="">
+                                    <p class="text-14 grey">{{re.yourQuesSubLabel}}</p>
+                                    <span class="space-15"></span>
+                                    <input ng-model="user.ques" placeholder="" class="col-xs-12 col-sm-12 col-md-12">
+                                </md-input-container>
+                            </div>
+                        </md-content>
+
+                        
+                        <md-content layout-padding="" class="bg-white container block-container p-0">
+                            <div class="p-0">
+                                <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block"
+                                    flex-gt-md="">
+                                    <strong class="text-14">{{re.yourQueryLabel}}</strong>
+                                    <span class="space-15"></span>
+                                    <textarea rows="2" cols="20" name="yourQueryLabel" form="" style="border:solid 1px rgba(0,0,0,0.12) !important;"></textarea>
+                                    <!-- <input ng-model="user.prob" placeholder="" class="col-xs-12 col-sm-12 col-md-12"> -->
+                                </md-input-container>
+                            </div>
+                        </md-content>
+                        <strong class="text-14">{{re.selectImageLabel}}</strong>
+                        <span class="space-15"></span>
+                    </ion-col>
+                    <ion-col col-12 col-sm-12 col-md-12 class="p-0">
+                        <ion-col col-4 col-sm-4 col-md-4>
+                            <img src="../resources/img/official/attachfile.png" class="m-0-auto text-center attachfile"
+                                ng-click="attachFile()">
+                        </ion-col>
+                        <ion-col col-4 col-sm-4 col-md-4>
+                            <img src="../resources/img/official/attachfile.png" class="m-0-auto text-center attachfile"
+                                ng-click="attachFile()">
+                        </ion-col>
+                        <ion-col col-4 col-sm-4 col-md-4>
+                            <img src="../resources/img/official/attachfile.png" class="m-0-auto text-cente attachfile"
+                                ng-click="attachFile()">
+                        </ion-col>
+                        <ion-col col-4 col-sm-4 col-md-4>
+                            <img src="../resources/img/official/attachfile.png" class="m-0-auto text-center attachfile"
+                                ng-click="attachFile()">
+                            <span class="space-15"></span>
+                            <div class="text-center">
+                                <button class="submit-button-red shadow" ng-click="submitForm()" aria-label="{{button.submit}}">{{button.submit}}</button>
+                            </div>
+                            <span class="space-30"></span>
+
+                        </ion-col>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </section>
+
+
+    </ion-content>
+</ion-view>

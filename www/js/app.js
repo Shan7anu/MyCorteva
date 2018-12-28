@@ -59,15 +59,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-/* Community Tab */
+/* Community Tab | Grower Enquiry*/
   .state('tab.community', {
       url: '/community',
       views: {
         'tab-community': {
-          templateUrl: 'templates/tab-community.html', //Grower Enquiry
+          templateUrl: 'templates/tab-community.html', 
           controller: 'CommunityCtrl'
         }
       }
+    })
+    /* Retailer Enquiry Screen */
+    .state('retailerEnquiry', {
+      url: '/retailerEnquiry',    
+      templateUrl: 'templates/retailer-enquiry.html',
+      controller: 'retailerEnquiryCtrl'
     })
 
     /* Library Tab */

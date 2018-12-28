@@ -184,7 +184,7 @@ angular.module('starter.controllers', [])
 
 
     })
-    /* Community Tab Ctrl */
+    /* Community Tab Ctrl | Grower Enquiry*/
     .controller('CommunityCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
         console.log("Inside CommunityCtrl");
         $scope.pagetitle = "Write Post";
@@ -195,10 +195,25 @@ angular.module('starter.controllers', [])
             alert('Imagine being taken to Gallery!');
         };
         $scope.goToRetailEnquiry = function () {
-            /* $location.path('/growerEnquiry'); */
-            alert('Imagine being taken to RetailEnquiry!');
+            $location.path('/retailerEnquiry');
+           /*  alert('Imagine being taken to Retailer Enquiry!'); */
         };
     }])
+    /* Retailer Enquiry Ctrl */
+    .controller('retailerEnquiryCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+        console.log("Inside retailerEnquiryCtrl");
+        $scope.pagetitle = "Write Post";
+        $scope.re = retailerEnquiry;
+        $scope.selectCrop = selectCrop;
+        $scope.button = button;
+        $scope.attachFile = function () {
+            alert('Imagine being taken to Gallery!');
+        };
+        $scope.submitForm = function () {
+            alert('Yet to be developed!');
+        };
+    }])
+    
     /* Library Tab Ctrl */
     .controller('LibraryCtrl', function ($scope) {
         $scope.settings = {

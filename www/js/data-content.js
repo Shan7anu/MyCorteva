@@ -105,7 +105,7 @@ selectCrop = ["Paddy", "Paddy 2", "Paddy 3"];
 /* Retailer Enquiry */
 retailerEnquiry = {
     heading: "Improve the probability of reciving the accurate information",
-    selectDealer: "Select Dealer",
+    selectDealer: "Selected Dealer",
     yourQuesLabel: "Your Question to the commmunity",
     yourQuesSubLabel: "Add a question indicating what's wrong with your crop.",
     yourQueryLabel: "Description of your Query",
