@@ -91,3 +91,23 @@ weeks = [
 ];
 liquidationRange = ["0 - 50", "50 - 100", "100 - 150", "150 - 200"];
 
+/* Grower Enquiry */
+growerEnquiry = {
+    heading: "Improve the probability of reciving the accurate information",
+    selectCropLabel: "Select Crop",
+    yourQuesLabel: "Your Question to the commmunity",
+    yourQuesSubLabel: "Add a question indicating what's wrong with your crop.",
+    yourProbLabel: "Description of your problem",
+    yourProbSubLabel: "Describe specialities such as change of leaves, roots, color, bugs, etc...",
+    selectImageLabel: "Select upto four images"
+}
+selectCrop = ["Paddy", "Paddy 2", "Paddy 3"];
+/* Retailer Enquiry */
+retailerEnquiry = {
+    heading: "Improve the probability of reciving the accurate information",
+    selectDealer: "Select Dealer",
+    yourQuesLabel: "Your Question to the commmunity",
+    yourQuesSubLabel: "Add a question indicating what's wrong with your crop.",
+    yourQueryLabel: "Description of your Query",
+    selectImageLabel: "Select upto four images"
+}

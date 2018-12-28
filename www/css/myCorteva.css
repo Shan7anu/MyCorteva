@@ -267,6 +267,19 @@ h6 {
     width: 100%;
 }
 
+.submit-button-red {
+    background-color: #ec0026 !important;
+    border: 1px solid #ec0026 ;
+    border-radius: 8px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
+}
 
 body.md-default-theme, body, html.md-default-theme, html {
     background-color: #fff;
@@ -394,6 +407,10 @@ input[type=number]::-webkit-outer-spin-button {
         left: 20px;
         width: 62%;
     }
+    .attachfile {
+        width: 55px !important;
+        margin: 4px !important;
+    }
 
 }
   /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30*/
@@ -413,6 +430,10 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 4px;
         left: 25px;
         width: 67%;
+    }
+    .attachfile {
+        width: 55px !important;
+        margin: 9px !important;
     }
 }
   
@@ -434,9 +455,13 @@ input[type=number]::-webkit-outer-spin-button {
         left: 35px;
         width: 68%;
     }
+    .attachfile {
+        width:55px !important;
+        margin: 11px !important;
+    }
 }
-/* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
-@media only screen and (min-width: 412px){
+/* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus, Pixel 2/2XL */
+@media only screen and (min-width: 411px){
     .imageontop-image2 {
         position: absolute !important;
         top: -20px !important;
@@ -446,6 +471,10 @@ input[type=number]::-webkit-outer-spin-button {
         position: fixed;
         top: 55px !important;
         left: 95px !important;
+    }
+    .attachfile {
+        width: 55px !important;
+        margin: 15px !important;
     }
 }
 @media only screen and (min-width: 425px) {
@@ -465,7 +494,10 @@ input[type=number]::-webkit-outer-spin-button {
         top: 0px;
         width: 73%;
     }
-    
+    .attachfile {
+        width: 55px !important;
+        margin: 17px !important;
+    }
 }
 /* ----------- iPad Media Queries ----------- */
 @media only screen 
@@ -500,6 +532,10 @@ and (max-device-width : 1024px)  {
         left: 96px;
         top: 0px;
         width: 50%;
+    }
+    .attachfile {
+        width: 100px !important;
+        margin: 37px !important;
     }
 
 }
@@ -539,6 +575,10 @@ and (max-device-width : 1024px)  {
         top: 10px;
         width: 50%;
     }
+    .attachfile {
+        width: 100px !important;
+        margin: 69px !important;
+    }
 }
 
 md-content {
@@ -554,5 +594,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     border: 0 !important;
     border-color: rgba(0,0,0,0.12) !important;
     border-width: 0 0 1px 0 !important;
-    
+}
+
+.attachfile {
+    width:55px;
+    margin: 2px;
 }

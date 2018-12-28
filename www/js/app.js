@@ -59,13 +59,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
-  .state('tab.chats', {
-      url: '/chats',
+/* Community Tab */
+  .state('tab.community', {
+      url: '/community',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-community': {
+          templateUrl: 'templates/tab-community.html', //Grower Enquiry
+          controller: 'CommunityCtrl'
+        }
+      }
+    })
+
+    /* Library Tab */
+    .state('tab.library', {
+      url: '/library',
+      views: {
+        'tab-library': {
+          templateUrl: 'templates/tab-library.html',
+          controller: 'LibraryCtrl'
         }
       }
     })
@@ -94,17 +105,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     .state('detailsPage', {
       url: '/detailsPage',    
       templateUrl: 'templates/detailsPage.html'
-    })
+    });
 
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  });
+
 
   // if none of the above states are matched, use this as the fallback  registration.html
   $urlRouterProvider.otherwise('/tab/dash');
