@@ -1,0 +1,41 @@
+<!-- Settings Screen -->
+<ion-nav-view>
+    <div ng-include="'templates/components/app-header-blue.html'"></div>
+    <ion-view class="has-header">
+        <!DOCTYPE html>
+        <html>
+        <body>
+            <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
+                <ion-grid>
+                    <span class="space-50"></span>
+                    <ion-row>
+                        <ion-col col-12 col-sm-12 col-md-12>
+                            <span class="space-15"></span>
+                            <strong>{{settings.heading}}</strong>
+                            <span class="space-15"></span>
+                        </ion-col>
+                        <ion-col col-12 col-sm-12 col-md-12>
+                            <ul class="settings list m-b-15" ng-repeat="ls in settingsListItem">
+                                <li class="item item-toggle">
+                                    <strong class="text-12">{{ls.label}}</strong>
+                                    <ion-col col-8 col-sm-8 col-md-8>
+                                        <p class="text-12">{{ls.sublabel}}</p>
+                                    </ion-col>
+                                    <ion-col col-4 col-sm-4 col-md-4>
+                                        <label class="toggle toggle-positive">
+                                            <input type="checkbox" ng-checked="{{ls.status}}">
+                                            <div class="track">
+                                                <div class="handle"></div>
+                                            </div>
+                                        </label>
+                                    </ion-col>
+                                </li>
+                            </ul>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </section>
+        </body>
+        </html>
+    </ion-view>
+    <ion-nav-view>

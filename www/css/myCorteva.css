@@ -312,11 +312,15 @@ body.md-default-theme, body, html.md-default-theme, html {
 
 /* Font Size 14 */
 .text-14 {
-    font-size: 14px;
+    font-size: 14px !important;
+}
+/* Font Size 12 */
+.text-12 {
+    font-size: 12px !important;
 }
 /* Font Size 10 */
 .text-10 {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 /* OTP Styling */
@@ -585,9 +589,7 @@ md-content {
     display: inline !important;
 }
 table {
-    /* width: 100%; */
     border-collapse: separate;
-    /* border-spacing: 10px 0;   */
 }
 
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
@@ -599,4 +601,28 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .attachfile {
     width:55px;
     margin: 2px;
+}
+
+.settings .item {
+    margin: 0px !important;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 5px 5px 0 !important;
+    border-style: none;
+    border-bottom-style: solid;
+}
+.m-b-15 {
+    margin-bottom: 15px !important;
+}
+.settings .item-toggle .toggle {
+    position: absolute;
+    top: 23px;
+    right: 5px;
+    z-index: 3;
+}
+.settings .toggle .track {
+    width: 48px !important;
+    height: 25px !important;
+}
+.settings .toggle .handle {
+    top: 4px;
 }

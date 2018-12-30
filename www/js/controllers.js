@@ -196,7 +196,7 @@ angular.module('starter.controllers', [])
         };
         $scope.goToRetailEnquiry = function () {
             $location.path('/retailerEnquiry');
-           /*  alert('Imagine being taken to Retailer Enquiry!'); */
+            /*  alert('Imagine being taken to Retailer Enquiry!'); */
         };
     }])
     /* Retailer Enquiry Ctrl */
@@ -213,7 +213,7 @@ angular.module('starter.controllers', [])
             alert('Yet to be developed!');
         };
     }])
-    
+
     /* Library Tab Ctrl */
     .controller('LibraryCtrl', function ($scope) {
         $scope.settings = {
@@ -267,6 +267,27 @@ angular.module('starter.controllers', [])
         $scope.profile = profile;
         $scope.userData = userData;
         $scope.navigateTo = function (to, event) {
-            alert('Imagine being taken to \'' + to + '\' Screen!');
+            if (to == "Settings") {
+                $location.path('/settings');
+            }
+            else {
+                alert('Imagine being taken to \'' + to + '\' Screen!');
+            }
+        };
+    }])
+    /* Settings Controller*/
+    .controller('settingsCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+        console.log("Inside settingsCtrl");
+        $scope.pagetitle = settings.pagetitle;
+        $scope.settings = settings;
+        $scope.settingsListItem = settingsListItem;
+        
+        $scope.navigateTo = function (to, event) {
+            if (to == "Settings") {
+                $location.path('/settings');
+            }
+            else {
+                alert('Imagine being taken to \'' + to + '\' Screen!');
+            }
         };
     }]);

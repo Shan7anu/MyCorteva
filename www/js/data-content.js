@@ -62,15 +62,15 @@ retailerQues = {
 
 /* Profile */
 profile = [
-    {listImg: "resources/img/official/Settings.png", listCaption: "Settings"},
-    {listImg: "resources/img/official/Storenearme.png", listCaption: "Stores near me"},
-    {listImg: "resources/img/official/CropDetails.png", listCaption: "Crop Details"},
-    {listImg: "resources/img/official/rate.png", listCaption: "Rate Pexena"},
-    {listImg: "resources/img/official/recommend.png", listCaption: "Recommend Pexena"},
-    {listImg: "resources/img/official/contactus.png", listCaption: "Contact Us"},
-    {listImg: "resources/img/official/Quality.png", listCaption: "Our Quality Promise"},
-    {listImg: "resources/img/official/privacy.png", listCaption: "Privacy Policy"},
-    {listImg: "resources/img/official/Settings.png", listCaption: "Terms and Condition"}
+    { listImg: "resources/img/official/Settings.png", listCaption: "Settings" },
+    { listImg: "resources/img/official/Storenearme.png", listCaption: "Stores near me" },
+    { listImg: "resources/img/official/CropDetails.png", listCaption: "Crop Details" },
+    { listImg: "resources/img/official/rate.png", listCaption: "Rate Pexena" },
+    { listImg: "resources/img/official/recommend.png", listCaption: "Recommend Pexena" },
+    { listImg: "resources/img/official/contactus.png", listCaption: "Contact Us" },
+    { listImg: "resources/img/official/Quality.png", listCaption: "Our Quality Promise" },
+    { listImg: "resources/img/official/privacy.png", listCaption: "Privacy Policy" },
+    { listImg: "resources/img/official/Settings.png", listCaption: "Terms and Condition" }
 ]
 userData = [
     {
@@ -111,3 +111,13 @@ retailerEnquiry = {
     yourQueryLabel: "Description of your Query",
     selectImageLabel: "Select upto four images"
 }
+/* Settings Screen */
+settings = {
+    pagetitle: "Settings",
+    heading: "Notification",
+}
+settingsListItem = [
+    { label: "Enable all Notifications", sublabel: "Recieve push Notifications", status: "false" },
+    { label: "Answer to your post", sublabel: "Recieve push Notifications", status: "false" },
+    { label: "Upvote to your post", sublabel: "Recieve push Notifications", status: "true" }
+]
