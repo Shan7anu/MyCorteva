@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
-      /* Community Tab | Grower Enquiry*/
+      /* Community Tab */
       .state('tab.community', {
         url: '/community',
         views: {
@@ -68,6 +68,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             controller: 'CommunityCtrl'
           }
         }
+      })
+      /* Grower Enquiry */
+      .state('growerEnquiry', {
+        url: '/growerEnquiry',
+        templateUrl: 'templates/grower-enquiry.html',
+        controller: 'growerEnquiryCtrl'
       })
       /* Retailer Enquiry Screen */
       .state('retailerEnquiry', {

@@ -184,9 +184,73 @@ angular.module('starter.controllers', [])
 
 
     })
-    /* Community Tab Ctrl | Grower Enquiry*/
+    /* Community Tab Ctrl*/
     .controller('CommunityCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
         console.log("Inside CommunityCtrl");
+        $scope.community = community;
+        $scope.pagetitle = community.pagetitle;
+        $scope.communitySlider = communitySlider;
+        $scope.communityComments = communityComments;
+        $scope.button = button;
+
+        /* Grower Enquiry Navigation */
+        $scope.goToGrowerEnquiry = function () {
+            $location.path('/growerEnquiry');
+        }
+            
+
+        /* Add Comment Button */
+        $scope.addComment = function () {
+            console.log("'Add Comment' Clicked");
+            $scope.addComment = true;
+            alert("Yet to add Functionality!");
+        }
+        /* Submit Button */
+        $scope.submitComment = function () {
+            console.log("'Submit' Pressed");
+            alert("Yet to add Functionality!");
+        }
+
+
+
+        /* Current Date at Top Right Corner */
+        var n = new Date();
+        var y = n.getFullYear();
+        var m = n.getMonth() + 1;
+        var d = n.getDate();
+        document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+
+        /* Slider */
+        $scope.data = {};
+        var setupSlider = function () {
+            //some options to pass to our slider
+            $scope.data.sliderOptions = {
+                initialSlide: 0,
+                direction: 'horizontal', //or vertical
+                speed: 300, //0.3s transition
+                loop: true,
+                effect: 'fade'
+            };
+
+            //create delegate reference to link with slider
+            $scope.data.sliderDelegate = null;
+
+            //watch our sliderDelegate reference, and use it when it becomes available
+            $scope.$watch('data.sliderDelegate', function (newVal, oldVal) {
+                if (newVal != null) {
+                    $scope.data.sliderDelegate.on('slideChangeEnd', function () {
+                        $scope.data.currentPage = $scope.data.sliderDelegate.activeIndex;
+                        //use $scope.$apply() to refresh any content external to the slider
+                        $scope.$apply();
+                    });
+                }
+            });
+        };
+        setupSlider();
+    }])
+    /* Grower Enquiry Ctrl */
+    .controller('growerEnquiryCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+        console.log("Inside growerEnquiryCtrl");
         $scope.pagetitle = "Write Post";
         $scope.ge = growerEnquiry;
         $scope.selectCrop = selectCrop;
@@ -196,7 +260,6 @@ angular.module('starter.controllers', [])
         };
         $scope.goToRetailEnquiry = function () {
             $location.path('/retailerEnquiry');
-            /*  alert('Imagine being taken to Retailer Enquiry!'); */
         };
     }])
     /* Retailer Enquiry Ctrl */
@@ -281,7 +344,7 @@ angular.module('starter.controllers', [])
         $scope.pagetitle = settings.pagetitle;
         $scope.settings = settings;
         $scope.settingsListItem = settingsListItem;
-        
+
         $scope.navigateTo = function (to, event) {
             if (to == "Settings") {
                 $location.path('/settings');

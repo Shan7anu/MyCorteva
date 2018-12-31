@@ -3,7 +3,8 @@ button = {
     next: "Next",
     submit: "Submit",
     select: "Select",
-    skipncontinue: "Skip & Continue"
+    skipncontinue: "Skip & Continue",
+    addComment: "Add Comment"
 }
 
 /* Registration Data */
@@ -120,4 +121,29 @@ settingsListItem = [
     { label: "Enable all Notifications", sublabel: "Recieve push Notifications", status: "false" },
     { label: "Answer to your post", sublabel: "Recieve push Notifications", status: "false" },
     { label: "Upvote to your post", sublabel: "Recieve push Notifications", status: "true" }
+]
+
+/* Community */
+community = {
+    pagetitle: "Community",
+    profileLabel: "Lorem ipsum dolor",
+    profileDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    cropType: "Paddy",
+    questionLabel: "Your Question to the community",
+    question: "Lorem ipsum dolor sit amet labore?",
+    descLabel: "Description of your problem",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    ans: "Answer",
+    guestUser: "Guest"
+}
+
+communitySlider = [
+    { url: "resources/img/official/carousel_1.jpg" },
+    { url: "resources/img/official/carousel_2.jpg" },
+    { url: "resources/img/official/carousel_3.jpg" }
+]
+
+communityComments = [
+    { username: "Replied User Name 1", comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"},
+    { username: "Replied User Name 2", comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"},
 ]
