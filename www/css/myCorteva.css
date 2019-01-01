@@ -428,6 +428,27 @@ input[type=number]::-webkit-outer-spin-button {
     ion-slides {
         height: 133px !important;
     }
+    .settings .item {
+        margin: 0px !important;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px 5px 0 !important;
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .settings .item-toggle .toggle {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        z-index: 3;
+    }
+    .settings .toggle .track {
+        width: 48px !important;
+        height: 25px !important;
+    }
+    .settings .toggle .handle {
+        top: 4px;
+    }
+
 
 }
   /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30, Nexus5*/
@@ -459,6 +480,26 @@ input[type=number]::-webkit-outer-spin-button {
     }
     ion-slides {
         height: 153px !important;
+    }
+    .settings .item {
+        margin: 0px !important;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px 5px 0 !important;
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .settings .item-toggle .toggle {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        z-index: 3;
+    }
+    .settings .toggle .track {
+        width: 48px !important;
+        height: 25px !important;
+    }
+    .settings .toggle .handle {
+        top: 4px;
     }
 }
   
@@ -492,6 +533,26 @@ input[type=number]::-webkit-outer-spin-button {
     ion-slides {
         height: 161px !important;
     }
+    .settings .item {
+        margin: 0px !important;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px 5px 0 !important;
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .settings .item-toggle .toggle {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        z-index: 3;
+    }
+    .settings .toggle .track {
+        width: 48px !important;
+        height: 25px !important;
+    }
+    .settings .toggle .handle {
+        top: 4px;
+    }
 }
 /* Devices with min-width 384CSSpx like Nexus 4 */
 @media only screen and (min-width: 384px) { 
@@ -500,6 +561,26 @@ input[type=number]::-webkit-outer-spin-button {
     }
     ion-slides {
         height: 166px !important;
+    }
+    .settings .item {
+        margin: 0px !important;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px 5px 0 !important;
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .settings .item-toggle .toggle {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        z-index: 3;
+    }
+    .settings .toggle .track {
+        width: 48px !important;
+        height: 25px !important;
+    }
+    .settings .toggle .handle {
+        top: 4px;
     }
 
 }
