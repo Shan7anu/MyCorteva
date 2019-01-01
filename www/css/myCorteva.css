@@ -502,6 +502,29 @@ input[type=number]::-webkit-outer-spin-button {
         top: 4px;
     }
 }
+
+@media only screen and (min-width: 361px) and (max-width: 375px)  {
+    .settings .item {
+        margin: 0px !important;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px 5px 0 !important;
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .settings .item-toggle .toggle {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        z-index: 3;
+    }
+    .settings .toggle .track {
+        width: 48px !important;
+        height: 25px !important;
+    }
+    .settings .toggle .handle {
+        top: 4px;
+    }
+}
   
 /* Devices with min-width 375CSSpx like iPhone X */
 @media only screen and (min-width: 375px) { 
