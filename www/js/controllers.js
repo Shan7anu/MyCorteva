@@ -197,18 +197,33 @@ angular.module('starter.controllers', [])
         $scope.goToGrowerEnquiry = function () {
             $location.path('/growerEnquiry');
         }
-            
 
         /* Add Comment Button */
         $scope.addComment = function () {
-            console.log("'Add Comment' Clicked");
-            $scope.addComment = true;
-            alert("Yet to add Functionality!");
+            $scope.enableAddingComment = true;
         }
-        /* Submit Button */
-        $scope.submitComment = function () {
-            console.log("'Submit' Pressed");
-            alert("Yet to add Functionality!");
+
+
+        /* Dynamic Comments */
+        $scope.newComment = [];
+        
+        $scope.submitComment = function (value) {
+            console.log("Entered Value: "+value);
+            $scope.enableAddingComment = false;
+            
+            console.log("Before push: "+$scope.newComment);
+            var cmt = document.getElementById("cmt").value;
+            if (cmt.length < 1){
+                alert("Nothing to Submit!");                
+            }
+            else if (value != '' || value != undefined ) {
+                $scope.newComment.push(value);
+                console.log("After push: "+$scope.newComment);
+                $scope.cmtName = "";
+            }
+        }
+        $scope.post_cmt = function ($home) {
+            $scope.newComment.splice($home, 1);
         }
 
 

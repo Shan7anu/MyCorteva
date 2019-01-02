@@ -504,6 +504,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (min-width: 361px) and (max-width: 375px)  {
+    .community .desc {
+        width: 67% !important;
+        line-height: 16px !important;
+        padding-left: 6px !important;    
+    }
+    ion-slides {
+        height: 161px !important;
+    }
     .settings .item {
         margin: 0px !important;
         border-bottom: 1px solid #cdcdcd;

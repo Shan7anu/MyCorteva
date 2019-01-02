@@ -1,73 +1,89 @@
-<!-- Grower Enquiry -->
 <ion-view view-title="Community">
   <div ng-include="'templates/components/app-header-blue.html'"></div>
   <ion-content class="has-header">
     <span class="space-15"></span>
     <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
-      <ion-grid>
-        <ion-row>
-          <ion-col col-12 col-sm-12 col-md-12>
-            <p class="text-10 grey pull-right" id="date"></p>
-            <span class="space-15"></span>
-            <ion-col col-4 col-sm-4 col-md-4>
-              <img src="resources/img/official/pic2.png" class="img-responsive m-0-auto pull-left" alt="profile picture" style="width: 100px;" ng-click="goToGrowerEnquiry()">
-            </ion-col>
-            <ion-col col-8 col-sm-8 col-md-8 class="community">
-              <span class="space-15"></span>
-              <strong class="text-14 m-left-10">{{community.profileLabel}}</strong>
-              <p class="text-10 pull-right text-justify desc">{{community.profileDesc}}</p>
-            </ion-col>
+      <form>
+        <ion-grid>
+          <ion-row>
             <ion-col col-12 col-sm-12 col-md-12>
-              <span class="space-80"></span>
-              <srong>{{community.cropType}}</srong>
-              <ion-slides ng-if="communitySlider && communitySlider.length" autoplay="5000" loop="true" speed="100" slider="data.sliderDelegate">
-                <ion-slide-page ng-repeat="obj in communitySlider">
-                  <img src="{{obj.url}}" >
-                </ion-slide-page>
-              </ion-slides>
-              <spaan class="space-30"></spaan>
-              <strong>{{community.questionLabel}}</strong>
-              <p class="text-14">{{community.question}}</p>
-              <spaan class="space-30"></spaan>
-              <strong>{{community.descLabel}}</strong>
-              <p class="text-14">{{community.desc}}</p>
-              <spaan class="space-15"></spaan>
-              <md-divider></md-divider>
-              <spaan class="space-15"></spaan>
-              <strong>{{community.ans}}</strong>
-              <space class="space-15"></space>
-              <div class="community-comments" ng-repeat="cc in communityComments">
-                <strong class="grey">{{cc.username}}</strong>
-                <span class="space-5"></span>
-                <p class="text-14">{{cc.comment}}</p>
+              <p class="text-10 grey pull-right" id="date"></p>
+              <span class="space-15"></span>
+              <ion-col col-4 col-sm-4 col-md-4>
+                <img src="resources/img/official/pic2.png" class="img-responsive m-0-auto pull-left" alt="profile picture"
+                  style="width: 100px;" ng-click="goToGrowerEnquiry()">
+              </ion-col>
+              <ion-col col-8 col-sm-8 col-md-8 class="community">
                 <span class="space-15"></span>
-              </div>
-              <div class="text-center">
-                <span class="space-15"></span>
-                <button class="primary-button shadow" ng-click="addComment()" aria-label="{{button.addComment}}">{{button.addComment}}</button>
-                <span class="space-30"></span>
-              </div>
-              <div ng-if="addComment">
-                  <strong class="text-12">{{community.guestUser}}</strong>
-                  <span class="space-15"></span>
-                  <textarea rows="2" cols="20" class="full-width" name="newComment" form="" style="border:solid 1px rgba(0,0,0,0.12) !important;"></textarea>
-                  <div class="text-center">
+                <strong class="text-14 m-left-10">{{community.profileLabel}}</strong>
+                <p class="text-10 pull-right text-justify desc">{{community.profileDesc}}</p>
+              </ion-col>
+              <ion-col col-12 col-sm-12 col-md-12>
+                <span class="space-80"></span>
+                <srong>{{community.cropType}}</srong>
+                <ion-slides ng-if="communitySlider && communitySlider.length" autoplay="5000" loop="true" speed="100"
+                  slider="data.sliderDelegate">
+                  <ion-slide-page ng-repeat="obj in communitySlider">
+                    <img src="{{obj.url}}">
+                  </ion-slide-page>
+                </ion-slides>
+                <spaan class="space-30"></spaan>
+                <strong>{{community.questionLabel}}</strong>
+                <p class="text-14">{{community.question}}</p>
+                <spaan class="space-30"></spaan>
+                <strong>{{community.descLabel}}</strong>
+                <p class="text-14">{{community.desc}}</p>
+                <spaan class="space-15"></spaan>
+                <md-divider></md-divider>
+                <spaan class="space-15"></spaan>
+                <strong>{{community.ans}}</strong>
+                <space class="space-15"></space>
+                <div class="form-group">
+                  <form ng-controller="CommunityCtrl">
+                    <!-- Static Comments -->
+                    <div class="community-comments" ng-repeat="cc in communityComments">
+                      <strong class="grey">{{cc.username}}</strong>
+                      <span class="space-5"></span>
+                      <p class="text-14">{{cc.comment}}</p>
                       <span class="space-15"></span>
-                      <button class="submit-button-red shadow" ng-click="submitComment()" aria-label="{{button.submit}}">{{button.submit}}</button>
+                    </div>
+                    <!-- Dynamic Comments -->
+                    <div ng-if="newComment" class="community-comments" ng-repeat="obj in newComment">
+                      <strong class="grey">{{community.guestUser}}</strong>
+                      <span class="space-5"></span>
+                      <p class="text-14">{{obj}}
+                        <span>
+                          <img src="../resources/img/official/close.png" ng-click="post_cmt($home)" style="color:red; float:right;">
+                        </span>
+                      </p>
+
+                      <span class="space-15"></span>
+                    </div>
+                    <div class="text-center">
+                      <span class="space-15"></span>
+                      <button class="primary-button shadow" ng-click="addComment()" aria-label="{{button.addComment}}">{{button.addComment}}</button>
                       <span class="space-30"></span>
-                  </div>
-              </div>
+                    </div>
+                    <div ng-if="enableAddingComment">
+                      <strong class="text-12">{{community.guestUser}}</strong>
+                      <span class="space-15"></span>
+                      <textarea id="cmt" rows="2" cols="20" class="form-control full-width" ng-model="cmtName" style="border:solid 1px rgba(0,0,0,0.12) !important;"></textarea>
+                      <div class="text-center">
+                        <span class="space-15"></span>
+                        <button class="submit-button-red shadow" ng-click="submitComment(cmtName)" aria-label="{{button.submit}}">{{button.submit}}</button>
+                        <span class="space-30"></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
 
 
+              </ion-col>
             </ion-col>
+          </ion-row>
+        </ion-grid>
+      </form>
 
-
-
-          </ion-col>
-        </ion-row>
-      </ion-grid>
     </section>
-
-
   </ion-content>
 </ion-view>
