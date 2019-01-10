@@ -1,5 +1,26 @@
-<ion-view view-title="Library">
-  <ion-content>
-   <h1>Library</h1>
+<ion-view view-title="Crop Details">
+  <div ng-include="'templates/components/app-header-blue.html'"></div>
+  <ion-content class="has-header">
+    <span class="space-15"></span>
+    <section class="container block-container" layout="column" ng-cloak class="md-inline-form">
+      <span class="space-15"></span>
+      <strong>FAQs</strong>
+      <span class="space-15"></span>
+        <ion-list class="cropDetails">
+            <div ng-repeat="obj in cropDetails">
+            <ion-item class="item-stable"
+                      ng-click="toggleGroup(group)"
+                      ng-class="{active: isGroupShown(group)}">
+                <i class="icon" ng-class="isGroupShown(group) ? 'ion-plus-round' : 'ion-minus-round'"></i>
+              &nbsp;
+             {{obj.ques}}
+            </ion-item>
+            <ion-item class="item-accordion"
+                      ng-hide="isGroupShown(group)">
+                      {{obj.ans}}
+            </ion-item>
+          </div>
+        </ion-list>
+    </section>
   </ion-content>
 </ion-view>

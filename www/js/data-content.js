@@ -95,7 +95,7 @@ liquidationRange = ["0 - 50", "50 - 100", "100 - 150", "150 - 200"];
 /* Grower Enquiry */
 growerEnquiry = {
     heading: "Improve the probability of reciving the accurate information",
-    selectCropLabel: "Select Crop",
+    selectCropLabel: "Selected Crop",
     yourQuesLabel: "Your Question to the commmunity",
     yourQuesSubLabel: "Add a question indicating what's wrong with your crop.",
     yourProbLabel: "Description of your problem",
@@ -147,3 +147,10 @@ communityComments = [
     { username: "Replied User Name 1", comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"},
     { username: "Replied User Name 2", comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"},
 ]
+/* Crop Details Page Data */
+cropDetails = [
+    { ques: "Selected Crop", ans: "Selected crop will display here.." },
+    { ques: "Your Question to the commmunity", ans: "Your answer goes here.." },
+    { ques: "Description of your problem", ans: "Your Description goes here.." }
+  ]
+   

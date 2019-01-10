@@ -21,7 +21,7 @@
               <ion-col col-12 col-sm-12 col-md-12>
                 <span class="space-80"></span>
                 <srong>{{community.cropType}}</srong>
-                <ion-slides ng-if="communitySlider && communitySlider.length" autoplay="5000" loop="true" speed="100"
+                <ion-slides ng-if="communitySlider && communitySlider.length" auto-play="true" loop="true" speed="100"
                   slider="data.sliderDelegate">
                   <ion-slide-page ng-repeat="obj in communitySlider">
                     <img src="{{obj.url}}">

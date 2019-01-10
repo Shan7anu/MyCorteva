@@ -27,6 +27,13 @@ body {
     overflow-x: hidden;
 }
 
+.tabs-striped .tabs {
+    box-shadow: 0px 0px 0 #a9a9a9, 0px 0px 15px #a9a9a9; !important;
+}
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active {
+    border-color: white !important;
+}
+
 /* CSS default set */
 
 body {
@@ -368,6 +375,13 @@ input[type=number]::-webkit-outer-spin-button {
     float: right !important;
 }
 
+.header-logo-button {
+    content: url("../resources/img/official/logo.png");
+    float: left !important;
+    margin-left: -15px !important;
+    margin-top: -5px !important;
+}
+
 .crop-placeholder-image {
     content: url("../resources/img/placeholder-image.svg");
     float: none;
@@ -691,7 +705,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* Devices with min-width 800CSSpx like Nexus 10 */
 @media only screen and (min-width: 800px)
-and (max-device-height: 1280px)  {
+and (max-device-height: 1280px)   {
+
     .community .desc {
         width: 85% !important;
         line-height: 16px !important;
@@ -705,6 +720,7 @@ and (max-device-height: 1280px)  {
         left: 0;
         width: 100%;
     }
+    
 
 }
 /* ----------- iPad Media Queries ----------- */
@@ -869,4 +885,26 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     left: 0;
     width: 100%;
     top: 100px;
+}
+
+/*
+ * https://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+ .list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+  }
+  .list .item.item-accordion.ng-hide {
+    line-height: 0px;
+  }
+  .list .item.item-accordion.ng-hide-add,
+  .list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+  }
+
+  .cropDetails .item.active.item-stable, .item.activated.item-stable, .item-complex.active .item-content.item-stable, .item-complex.activated .item-content.item-stable, .item .item-content.active.item-stable, .item .item-content.activated.item-stable {
+    background-color: transparent !important;
+    border: transparent !important
 }
