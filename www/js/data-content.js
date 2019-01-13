@@ -158,6 +158,7 @@ cropDetails = [
 feeds = [
     {
         profilePicture: "resources/img/official/pic2.png",
+        postImage: "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg",
         username: "Dipendra Singh", 
         ques: "Why should I follow you, in five sentences?", 
         ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
@@ -166,6 +167,7 @@ feeds = [
      },
      {
         profilePicture: "resources/img/official/pic2.png",
+        postImage: "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg",
         username: "Dipendra Singh", 
         ques: "Why should I follow you, in five sentences?", 
         ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
@@ -174,6 +176,7 @@ feeds = [
      },
      {
         profilePicture: "resources/img/official/pic2.png",
+        postImage: "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg",
         username: "Dipendra Singh", 
         ques: "Why should I follow you, in five sentences?", 
         ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
@@ -182,6 +185,7 @@ feeds = [
      },
      {
         profilePicture: "resources/img/official/pic2.png",
+        postImage: "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg",
         username: "Dipendra Singh", 
         ques: "Why should I follow you, in five sentences?", 
         ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
