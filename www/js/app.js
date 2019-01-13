@@ -60,14 +60,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
       /* Community Tab */
-      .state('tab.community', {
+      .state('community', {
         url: '/community',
-        views: {
-          'tab-community': {
-            templateUrl: 'templates/tab-community.html',
-            controller: 'CommunityCtrl'
-          }
-        }
+        templateUrl: 'templates/tab-community.html',
+        controller: 'CommunityCtrl'
+        
       })
       /* Grower Enquiry */
       .state('growerEnquiry', {
@@ -123,6 +120,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       .state('detailsPage', {
         url: '/detailsPage',
         templateUrl: 'templates/detailsPage.html'
+      })
+      /* Community Feed Screen */
+      .state('tab.communityFeed', {
+        url: '/communityFeed',
+        views: {
+          'tab-community-feed': {
+            templateUrl: 'templates/tab-community-feed.html',
+            controller: 'communityFeedCtrl'
+          }
+        }
       });
 
     // if none of the above states are matched, use this as the fallback Dashboard (tab-dash.html)

@@ -315,13 +315,24 @@ body.md-default-theme, body, html.md-default-theme, html {
     right: 0;
     z-index: 9999;
 }
+.placed-bottom {
+    overflow: hidden;
+    position: relative;
+    bottom: -1px;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
+}
 
 
 
 .shadow {
     box-shadow: 0 5px 15px #a9a9a9;
 }
-
+/* Font Size 18 */
+.text-18 {
+    font-size: 18px !important;
+}
 /* Font Size 14 */
 .text-14 {
     font-size: 14px !important;
@@ -462,8 +473,25 @@ input[type=number]::-webkit-outer-spin-button {
     .settings .toggle .handle {
         top: 4px;
     }
-
-
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 }
   /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30, Nexus5*/
 @media only screen and (max-width: 360px) and (min-width: 321px) {
@@ -515,6 +543,25 @@ input[type=number]::-webkit-outer-spin-button {
     .settings .toggle .handle {
         top: 4px;
     }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 }
 
 @media only screen and (min-width: 361px) and (max-width: 375px)  {
@@ -546,10 +593,29 @@ input[type=number]::-webkit-outer-spin-button {
     .settings .toggle .handle {
         top: 4px;
     }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 }
   
 /* Devices with min-width 375CSSpx like iPhone X */
-@media only screen and (min-width: 375px) { 
+@media only screen and (min-width: 375px) {
 .imageontop-image2 {
     position: absolute !important;
     top: -20px !important;
@@ -598,9 +664,28 @@ input[type=number]::-webkit-outer-spin-button {
     .settings .toggle .handle {
         top: 4px;
     }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 }
 /* Devices with min-width 384CSSpx like Nexus 4 */
-@media only screen and (min-width: 384px) { 
+@media only screen and (min-width: 384px) {
     .community .desc {
         padding-left: 2px !important;
     }
@@ -627,6 +712,25 @@ input[type=number]::-webkit-outer-spin-button {
     .settings .toggle .handle {
         top: 4px;
     }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 
 }
 /* Devices with min-width 411/412CSSpx like Nexus 5X, Nexus 6/6P, iPhone 6/7/8 Plus, Pixel 2/2XL */
@@ -652,6 +756,37 @@ input[type=number]::-webkit-outer-spin-button {
     }
     ion-slides {
         height: 180px !important;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
     }
 }
 @media only screen and (min-width: 425px) {
@@ -685,6 +820,26 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .swiper-container-horizontal > .swiper-pagination {
         top: 155px !important;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 }
 /* Devices with min-width 600CSSpx like Nexus 7 */
 @media only screen and (min-width: 600px) {
@@ -700,6 +855,25 @@ input[type=number]::-webkit-outer-spin-button {
         left: 0;
         width: 100%;
         top: 225px !important;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
     }
 
 }
@@ -719,6 +893,25 @@ and (max-device-height: 1280px)   {
         top: 325px !important;
         left: 0;
         width: 100%;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
     }
     
 
@@ -775,6 +968,25 @@ and (max-device-width : 1024px)  {
     .swiper-container-horizontal > .swiper-pagination {
         top: 310px !important;
     }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
+    }
 
 }
 /* ----------- iPad Pro Media Queries ----------- */
@@ -830,6 +1042,25 @@ and (max-device-width : 1024px)  {
     }
     .swiper-container-horizontal > .swiper-pagination {
         top: 440px !important;
+    }
+    /* Community Feeds Screen */
+    .feed-cards > .item-body {
+        border: 1px solid #efefef !important;
+        background-color: #fff !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75) !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+    }
+    .item-body h4, .item-body p {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .write-post {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 5;
+        margin-top: -25px;
     }
 }
 
@@ -907,4 +1138,19 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   .cropDetails .item.active.item-stable, .item.activated.item-stable, .item-complex.active .item-content.item-stable, .item-complex.activated .item-content.item-stable, .item .item-content.active.item-stable, .item .item-content.activated.item-stable {
     background-color: transparent !important;
     border: transparent !important
+}
+
+.positionRelative {
+    position: relative !important;
+}
+
+.feed-image {
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4px;
 }

@@ -380,4 +380,27 @@ angular.module('starter.controllers', [])
                 alert('Imagine being taken to \'' + to + '\' Screen!');
             }
         };
-    }]);
+    }])
+    
+        /* Community Landing Ctrl */
+        .controller('communityFeedCtrl', ['$rootScope', '$scope', '$location', '$state', function ($rootScope, $scope, $location, $state) {
+            console.log("Inside communityFeedCtrl");
+            $scope.pagetitle = "Community";
+            $scope.feeds = feeds;
+            $scope.feedUserProfile = function(data) {
+                alert("Imagine being taken to '"+data.username+ "' profile!");
+            }
+            $scope.writePost = function(data) {
+                alert("Imagine editing '"+data.ques+ "' post!");
+            }
+            $scope.upvote = function(data) {
+                alert("Imagine you Upvoted the post named '"+data.ques+"'");
+            }
+            $scope.share = function(data) {
+                alert("Imagine you Shared the post named '"+data.ques+"'");
+            }
+            $scope.navigateTo = function() {
+                //$state.go('tab.community');
+                $location.path('community');
+            }
+        }]);

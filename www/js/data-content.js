@@ -152,5 +152,41 @@ cropDetails = [
     { ques: "Selected Crop", ans: "Selected crop will display here.." },
     { ques: "Your Question to the commmunity", ans: "Your answer goes here.." },
     { ques: "Description of your problem", ans: "Your Description goes here.." }
-  ]
+]
+
+/* Community Feed Data */
+feeds = [
+    {
+        profilePicture: "resources/img/official/pic2.png",
+        username: "Dipendra Singh", 
+        ques: "Why should I follow you, in five sentences?", 
+        ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
+        upvoteCount: "1",
+        shareCount: "5"
+     },
+     {
+        profilePicture: "resources/img/official/pic2.png",
+        username: "Dipendra Singh", 
+        ques: "Why should I follow you, in five sentences?", 
+        ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
+        upvoteCount: "1",
+        shareCount: "5"
+     },
+     {
+        profilePicture: "resources/img/official/pic2.png",
+        username: "Dipendra Singh", 
+        ques: "Why should I follow you, in five sentences?", 
+        ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
+        upvoteCount: "1",
+        shareCount: "5"
+     },
+     {
+        profilePicture: "resources/img/official/pic2.png",
+        username: "Dipendra Singh", 
+        ques: "Why should I follow you, in five sentences?", 
+        ans: "This is a 'Facebook' styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.",
+        upvoteCount: "1",
+        shareCount: "5"
+     }
+]
    
